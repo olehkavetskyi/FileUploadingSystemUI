@@ -1,27 +1,38 @@
-# Client
+# UI Repository
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+![image](https://user-images.githubusercontent.com/110283090/234331550-89f2f821-790a-4fee-95e1-db9b551689e7.png)
 
-## Development server
+File uploading system was created to test my practical skills of C#, Microsoft Azure and front-end.
+This app represents a form that takes user's email and a file with '.docx' extension. It sends to the server where API part saves to Azure Blob Storage the file. In case of success azure function is triggered and with SendGrid sends notification about success to the user.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+To install the UI repository, you can follow these steps:
 
-## Code scaffolding
+1. Clone the repository to your local machine using Git.
+2. Install Node.js and npm if you haven't already.
+3. Navigate to the root of the repository using the command prompt.
+4. Run the command npm install to install the dependencies.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+To use the UI repository, you can follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Run the command ng serve to start the development server.
+2. Navigate to http://localhost:4200/ in your browser to see the application running.
 
-## Running unit tests
+## Deployment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To deploy the UI repository to Azure Web App, you can follow these steps:
 
-## Running end-to-end tests
+1. Create a new Azure Web App for .NET.
+2. Navigate to the Deployment Center and choose GitHub as the source.
+3. Select the UI repository and configure the deployment options.
+4. Wait for the deployment to finish and navigate to the URL of the Azure Web App to see the deployed application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+This repository contains UI part of the application
 
-## Further help
+## Links
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In order to see API part follow [this](https://github.com/olehkavetskyi/FileUploadingSystemAPI) link
+
+A link to Azure Web Application - https://fileuploadingsystem.azurewebsites.net (deactivated)
